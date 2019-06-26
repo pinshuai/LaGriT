@@ -35,3 +35,29 @@ A [Docker image](https://hub.docker.com/r/ees16/tinerator) can be pulled and run
     docker run --rm -p 8888:8888 ees16/tinerator
 
 ![](docs/assets/images/examples/attribute_final.png)
+
+## run jupyter notebook using Shifter on NERSC
+
+Run docker image on [Shifter](https://docs.nersc.gov/programming/shifter/overview/)
+
+- download docker image 
+
+`shifterimg -v pull docker:ees16/tinerator:latest`
+
+- create kernel spec file `kernel.json` under 
+
+```
+{
+    "argv": [
+        "shifter",
+        "--image=continuumio/anaconda3:latest",
+        "/opt/conda/bin/python",
+        "-m",
+        "ipykernel_launcher",
+        "-f",
+        "{connection_file}"
+    ],
+    "display_name": "my-shifter-kernel",
+    "language": "python"
+}
+```
