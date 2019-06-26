@@ -24,14 +24,59 @@ node-based attributes to a mesh, and much more.
 
 
 For installation instructions and API usage,
-[refer to the documentation here](https://raw.githack.com/lanl/LaGriT/tinerator/html/index.html)
+refer to the [documentation](https://raw.githack.com/lanl/LaGriT/tinerator/html/index.html) and [tutorials](https://raw.githack.com/lanl/LaGriT/tinerator/html/tutorials/index.html)
 or by navigating to `docs/index.md`.
 
 ## Docker
 
 A [Docker image](https://hub.docker.com/r/ees16/tinerator) can be pulled and run via:
 
-    docker pull ees16/tinerator
-    docker run --rm -p 8888:8888 ees16/tinerator
+- download the image
 
-![](docs/assets/images/examples/attribute_final.png)
+`docker pull ees16/tinerator`
+
+- run it in docker. You can choose to mount your local volume to the image.
+
+`docker run -v LOCAL_DIR:/home/jovyan/work -p 8888:8888 ees16/tinerator:latest`
+
+the default is running in Jupyter notebook, but you can launch Jupyter lab instead:
+
+`docker run -v LOCAL_DIR:/home/jovyan/work -p 8888:8888 ees16/tinerator:latest jupyter lab`
+
+If the notebook does not open, try to paste one of the links (similar) to the browser:
+
+`http://(a65d926e15ba or 127.0.0.1):8888/?token=44dbc7fd4da2598a8797ff0657721b74589e9444315f5802`
+
+![final attribute](docs/assets/images/examples/attribute_final.png)
+
+## run jupyter notebook using Shifter on NERSC
+
+Run docker image on [Shifter](https://docs.nersc.gov/programming/shifter/overview/)
+
+- download docker image 
+
+    ```
+    shifterimg -v pull docker:ees16/tinerator:latest
+    ```
+
+- create kernel spec file `kernel.json` and put it under `~/.local/share/jupyter/kernels/shifter-jupyter/kernel.json`
+
+```
+{
+    "argv": [
+        "shifter",
+        "--image=ees16/tinerator:latest",
+        "/opt/conda/bin/python",
+        "-m",
+        "ipykernel_launcher",
+        "-f",
+        "{connection_file}"
+    ],
+    "display_name": "shifter-jupyter",
+    "language": "python"
+}
+```
+
+note: python path here being the location in the container
+
+- go to Jupyterhub and choose `shifter-jupyter` from the kernels
