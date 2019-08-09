@@ -6,8 +6,14 @@ TINerator is a tool for the fast creation of extruded and refined meshes from
 DEM and GIS data, developed at Los Alamos National Laboratory to aid in
 hydrogeological simulations.
 
+<<<<<<< HEAD
 TINerator allows a user to define a bounding box of latitude/longitude
 coordinates, a shapefile, or a local DEM, and generate a surface or volume mesh.
+=======
+[![Build Status](https://travis-ci.org/lanl/LaGriT.svg?branch=master)](https://travis-ci.org/lanl/LaGriT) [![Latest Version](https://img.shields.io/github/release/lanl/lagrit.svg?style=flat-square)](https://github.com/lanl/lagrit/releases) [![PyPI](https://img.shields.io/pypi/l/Django.svg)](https://github.com/lanl/LaGriT/blob/doc-test/LICENSE)
+
+[LaGriT Home](https://lagrit.lanl.gov) • [LaGriT Documentation](http://lanl.github.io/LaGriT) • [Meshing Portfolio](https://meshing.lanl.gov/)
+>>>>>>> 3bb6547f3c57e282d7fcd9676633b44f63a06982
 
 The mesh will have the topology of the DEM, along with user-defined material IDs
 and depths for stacked layers. Further, TINerator performs watershed delination
