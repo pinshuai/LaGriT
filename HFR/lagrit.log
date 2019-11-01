@@ -16,7 +16,7 @@ resetpts/itp
 cmo select mo1                                                                  
 cmo/select/mo1                                                                  
 cmo select mo1                                                                  
-massage/1871.52/2.92425e-06/2.92425e-06                                         
+massage/18715.2/2.92425e-05/2.92425e-05                                         
 cmo select mo1                                                                  
 recon/0/                                                                        
 cmo select mo1                                                                  
@@ -60,7 +60,7 @@ smooth
 cmo select mo1                                                                  
 recon/0/                                                                        
 cmo select mo1                                                                  
-massage/935.76/2.92425e-06/2.92425e-06                                          
+massage/9357.6/2.92425e-05/2.92425e-05                                          
 cmo select mo1                                                                  
 resetpts/itp                                                                    
 cmo select mo1                                                                  
@@ -90,7 +90,7 @@ smooth
 cmo select mo1                                                                  
 recon/0/                                                                        
 cmo select mo1                                                                  
-massage/467.88/2.92425e-06/2.92425e-06                                          
+massage/4678.8/2.92425e-05/2.92425e-05                                          
 cmo select mo1                                                                  
 resetpts/itp                                                                    
 cmo select mo1                                                                  
@@ -120,7 +120,7 @@ smooth
 cmo select mo1                                                                  
 recon/0/                                                                        
 cmo select mo1                                                                  
-massage/233.94/2.92425e-06/2.92425e-06                                          
+massage/2339.4/2.92425e-05/2.92425e-05                                          
 cmo select mo1                                                                  
 resetpts/itp                                                                    
 cmo select mo1                                                                  
@@ -156,10 +156,10 @@ cmo/addatt/mo1/fac_n/vdouble/scalar/nnodes/linear/permanent//0.0
 define/mo_pts/mo1                                                               
 define/PARAM_A/0.5                                                              
 define/PARAM_A2/0.25                                                            
-define/PARAM_B/21.931874999999998                                               
-define/PARAM_B2/25.5871875                                                      
+define/PARAM_B/219.31875000000002                                               
+define/PARAM_B2/255.87187500000002                                              
 cmo select mo1                                                                  
-massage2/user_function2.lgi/23.394000000000002/fac_n/1e-05/1e-05/1,0,0/strictmer
+massage2/user_function2.lgi/233.94000000000003/fac_n/1e-05/1e-05/1,0,0/strictmer
 cmo/DELATT/mo_pts/dfield                                                        
 compute/distance_field/mo_pts/mo_line_work/dfield                               
 math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A2/                       
@@ -253,13 +253,7 @@ cmo select mo1
 recon/0/                                                                        
 assign///maxiter_sm/10                                                          
 cmo select mo1                                                                  
-massage2/user_function.lgi/23.394000000000002/fac_n/1e-05/1e-05/1,0,0/strictmerg
-cmo/DELATT/mo_pts/dfield                                                        
-compute/distance_field/mo_pts/mo_line_work/dfield                               
-math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A/                        
-math/add/mo_pts/x_four/1,0,0/mo_pts/x_four/PARAM_B/                             
-cmo/copyatt/mo_pts/mo_pts/fac_n/x_four                                          
-finish                                                                          
+massage2/user_function.lgi/233.94000000000003/fac_n/1e-05/1e-05/1,0,0/strictmerg
 cmo/DELATT/mo_pts/dfield                                                        
 compute/distance_field/mo_pts/mo_line_work/dfield                               
 math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A/                        
@@ -355,3 +349,20 @@ cmo select surfacemesh
 resetpts/itp                                                                    
 cmo select surfacemesh                                                          
 cmo/addatt/surfacemesh/z_elev/VDOUBLE/scalar/nnodes/linear/permanent//0.0       
+cmo select surfacemesh                                                          
+cmo/copyatt/surfacemesh/surfacemesh/z_elev/zic                                  
+cmo select surfacemesh                                                          
+cmo/setatt/surfacemesh/zic/1,0,0/0.0                                            
+cmo select mo1                                                                  
+cmo/addatt/mo1/z_new/VDOUBLE/scalar/nnodes/linear/permanent//0.0                
+cmo select mo1                                                                  
+interpolate/continuous/mo1/z_new/1,0,0/surfacemesh/z_elev                       
+cmo select mo1                                                                  
+cmo/copyatt/mo1/mo1/zic/z_new                                                   
+cmo select mo1                                                                  
+cmo/DELATT/mo1/z_new                                                            
+cmo select surfacemesh                                                          
+cmo/delete/surfacemesh                                                          
+cmo select mo1                                                                  
+cmo/setatt/mo1/ndimensions_geom/1,0,0/3                                         
+dump/exo/./mesh/columbia_subbasin.exo/mo1                                       

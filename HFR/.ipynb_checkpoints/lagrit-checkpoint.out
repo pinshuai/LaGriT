@@ -1,0 +1,986 @@
+ 
+ 
+*               * * * * * * * * * * * * * * * * * * * * * * * *                 
+*               *                                             *                 
+*               *    Program:  LaGriT V3.320   Linux          *                 
+*               *    date_compile: 2019/10/09 Static          *                 
+*               *    Run Time: 2019/Oct 24  04:58:03          *                 
+*               *    Manual:   http://lagrit.lanl.gov         *                 
+*               *                                             *                 
+*               * * * * * * * * * * * * * * * * * * * * * * * *                 
+ 
+                               -----oOo-----                                    
+             LaGriT V3 LA-CC-15-069  https://github.com/lanl/LaGriT             
+  Copyright 2016. Triad National Security, LLC.  All rights reserved. This      
+  program was produced under U.S. Government contract 89233218CNA000001         
+  for Los Alamos National Laboratory (LANL), which is operated by Triad         
+  National Security, LLC for the U.S. Department of Energy/National Nuclear     
+  Security Administration.  All rights in the program are reserved by Triad     
+  National Security, LLC, and the U.S. Department of Energy/National Nuclear    
+  Security Administration. The Government is granted for itself and others      
+  acting on its behalf a nonexclusive, paid-up, irrevocable worldwide license   
+  in this material to reproduce, prepare derivative works, distribute copies    
+  to the public, perform publicly and display publicly, and to permit others to 
+  do so. This software is open source and available under the BSD-3 License.    
+                               -----oOo-----                                    
+ 
+ 
+Output log file: lagrit.out                                                     
+Command log file: lagrit.log                                                    
+ 
+read/poly_1.inp/mo_poly_work                                                    
+read/avs/poly_1.inp/mo_poly_work                                                
+geniee                                                                          
+finish                                                                          
+cmo/status/brief                                                                
+ 
+The current-mesh-object(CMO) is: mo_poly_work                                   
+ 
+  1 Mesh Object name: mo_poly_work                                              
+    number of nodes =           863        number of elements =          862    
+    dimensions geometry =         3        element type =                lin    
+    dimensions topology =         1        2 nodes      2 faces      1 edges    
+    boundary flag =        16000000        status =                   active    
+ 
+ 
+finish                                                                          
+finish                                                                          
+read/intersections_1.inp/mo_line_work                                           
+read/avs/intersections_1.inp/mo_line_work                                       
+cmo/status/brief                                                                
+ 
+The current-mesh-object(CMO) is: mo_line_work                                   
+ 
+  1 Mesh Object name: mo_poly_work                                              
+    number of nodes =           863        number of elements =          862    
+    dimensions geometry =         3        element type =                lin    
+    dimensions topology =         1        2 nodes      2 faces      1 edges    
+    boundary flag =        16000000        status =                 inactive    
+ 
+  2 Mesh Object name: mo_line_work                                              
+    number of nodes =          3775        number of elements =            0    
+    dimensions geometry =         3        element type =                tet    
+    dimensions topology =         3        4 nodes      4 faces      6 edges    
+    boundary flag =        16000000        status =                   active    
+ 
+ 
+finish                                                                          
+finish                                                                          
+cmo/create/mo1/0/0/triplane                                                     
+cmo select mo_poly_work                                                         
+copypts/mo1/mo_poly_work                                                        
+copypts added nodes          1 to        863                                    
+cmo select mo1                                                                  
+cmo/select/mo1                                                                  
+cmo select mo1                                                                  
+triangulate/clockwise                                                           
+filter/1,0,0                                                                    
+FILTER:Use internal epsilonl value =   0.843095148567E-09                       
+FILTER:Dudding duplicate points:           0                                    
+finish                                                                          
+rmpoint/compress                                                                
+         0 points removed and          0 elements removed.                      
+RMPOINT: new point count is          863                                        
+RMPOINT: new element count is        861                                        
+finish                                                                          
+resetpts/itp                                                                    
+geniee                                                                          
+finish                                                                          
+finish                                                                          
+cmo select mo1                                                                  
+cmo/setatt/mo1/imt/1,0,0/1                                                      
+       863 values reset for attribute imt1                                      
+ 
+cmo select mo1                                                                  
+cmo/setatt/mo1/itetclr/1,0,0/1                                                  
+       861 values reset for attribute itetclr                                   
+ 
+cmo select mo1                                                                  
+resetpts/itp                                                                    
+geniee                                                                          
+finish                                                                          
+cmo select mo1                                                                  
+cmo/select/mo1                                                                  
+cmo select mo1                                                                  
+massage/11.200000000000001/1.75e-08/1.75e-08                                    
+nodes in point set  =        863                                                
+rmpoint/element                                                                 
+ Dudded          0 points plus parents, and           1 elements removed.       
+finish                                                                          
+geniee                                                                          
+finish                                                                          
+Merged              1 nodes.                                                    
+recon/0/0.17500000E-07/                                                         
+RECON2D reconnection loop2d:     1                                              
+Recon2d: iteration number=          1 number of flips=          4               
+Recon2d: iteration number=          2 number of flips=          6               
+Recon2d: iteration number=          3 number of flips=          8               
+Recon2d: iteration number=          4 number of flips=         10               
+Recon2d: iteration number=          5 number of flips=         12               
+Recon2d: iteration number=          6 number of flips=         14               
+Recon2d: iteration number=          7 number of flips=         16               
+Recon2d: iteration number=          8 number of flips=         18               
+Recon2d: iteration number=          9 number of flips=         20               
+Recon2d: iteration number=         10 number of flips=         22               
+Recon2d: iteration number=         11 number of flips=         24               
+Recon2d: iteration number=         12 number of flips=         26               
+Recon2d: iteration number=         13 number of flips=         28               
+Recon2d: iteration number=         14 number of flips=         30               
+Recon2d: iteration number=         15 number of flips=         32               
+Recon2d: iteration number=         16 number of flips=         34               
+Recon2d: iteration number=         17 number of flips=         36               
+Recon2d: iteration number=         18 number of flips=         38               
+Recon2d: iteration number=         19 number of flips=         40               
+Recon2d: iteration number=         20 number of flips=         42               
+Recon2d: iteration number=         21 number of flips=         44               
+Recon2d: iteration number=         22 number of flips=         46               
+Recon2d: iteration number=         23 number of flips=         48               
+Recon2d: iteration number=         24 number of flips=         50               
+Recon2d: iteration number=         25 number of flips=         52               
+Recon2d: iteration number=         26 number of flips=         54               
+Recon2d: iteration number=         27 number of flips=         56               
+Recon2d: iteration number=         28 number of flips=         58               
+Recon2d: iteration number=         29 number of flips=         60               
+Recon2d: iteration number=         30 number of flips=         62               
+Recon2d: iteration number=         31 number of flips=         64               
+Recon2d: iteration number=         32 number of flips=         66               
+Recon2d: iteration number=         33 number of flips=         68               
+Recon2d: iteration number=         34 number of flips=         70               
+Recon2d: iteration number=         35 number of flips=         72               
+Recon2d: iteration number=         36 number of flips=         74               
+Recon2d: iteration number=         37 number of flips=         76               
+Recon2d: iteration number=         38 number of flips=         78               
+Recon2d: iteration number=         39 number of flips=         80               
+Recon2d: iteration number=         40 number of flips=         82               
+Recon2d: iteration number=         41 number of flips=         84               
+Recon2d: iteration number=         42 number of flips=         86               
+Recon2d: iteration number=         43 number of flips=         88               
+Recon2d: iteration number=         44 number of flips=         90               
+Recon2d: iteration number=         45 number of flips=         92               
+Recon2d: iteration number=         46 number of flips=         94               
+Recon2d: iteration number=         47 number of flips=         96               
+Recon2d: iteration number=         48 number of flips=         98               
+Recon2d: iteration number=         49 number of flips=        100               
+Recon2d: iteration number=         50 number of flips=        102               
+Recon2d max iterations:         51                                              
+RECON: done.                                                                    
+finish                                                                          
+nodes in point set  =        862                                                
+SGD:      0 total relaxations on point set of    862 indept. nodes.             
+rmpoint/compress                                                                
+         1 points removed and          0 elements removed.                      
+RMPOINT: new point count is          862                                        
+RMPOINT: new element count is        860                                        
+finish                                                                          
+nodes in point set  =        862                                                
+recon/0/0.17500000E-07/                                                         
+RECON2D reconnection loop2d:     1                                              
+Recon2d: iteration number=          1 number of flips=        104               
+Recon2d: iteration number=          2 number of flips=        106               
+Recon2d: iteration number=          3 number of flips=        108               
+Recon2d: iteration number=          4 number of flips=        110               
+Recon2d: iteration number=          5 number of flips=        112               
+Recon2d: iteration number=          6 number of flips=        114               
+Recon2d: iteration number=          7 number of flips=        116               
+Recon2d: iteration number=          8 number of flips=        118               
+Recon2d: iteration number=          9 number of flips=        120               
+Recon2d: iteration number=         10 number of flips=        121               
+Recon2d: iteration number=         11 number of flips=        122               
+Recon2d: iteration number=         12 number of flips=        123               
+Recon2d: iteration number=         13 number of flips=        124               
+Recon2d: iteration number=         14 number of flips=        125               
+Recon2d: iteration number=         15 number of flips=        126               
+Recon2d: iteration number=         16 number of flips=        127               
+Recon2d: iteration number=         17 number of flips=        128               
+Recon2d: iteration number=         18 number of flips=        129               
+Recon2d: iteration number=         19 number of flips=        130               
+Recon2d: iteration number=         20 number of flips=        131               
+Recon2d: iteration number=         21 number of flips=        132               
+Recon2d: iteration number=         22 number of flips=        133               
+Recon2d: iteration number=         23 number of flips=        134               
+Recon2d: iteration number=         24 number of flips=        135               
+Recon2d: iteration number=         25 number of flips=        136               
+Recon2d: iteration number=         26 number of flips=        137               
+Recon2d: iteration number=         27 number of flips=        138               
+Recon2d: iteration number=         28 number of flips=        139               
+Recon2d: iteration number=         29 number of flips=        140               
+Recon2d: iteration number=         30 number of flips=        141               
+Recon2d: iteration number=         31 number of flips=        142               
+Recon2d: iteration number=         32 number of flips=        143               
+Recon2d: iteration number=         33 number of flips=        144               
+Recon2d: iteration number=         34 number of flips=        145               
+Recon2d: iteration number=         35 number of flips=        146               
+Recon2d: iteration number=         36 number of flips=        147               
+Recon2d: iteration number=         37 number of flips=        148               
+Recon2d: iteration number=         38 number of flips=        149               
+Recon2d: iteration number=         39 number of flips=        150               
+Recon2d: iteration number=         40 number of flips=        151               
+Recon2d: iteration number=         41 number of flips=        152               
+Recon2d: iteration number=         42 number of flips=        153               
+Recon2d: iteration number=         43 number of flips=        154               
+Recon2d: iteration number=         44 number of flips=        155               
+Recon2d: iteration number=         45 number of flips=        156               
+Recon2d: iteration number=         46 number of flips=        157               
+Recon2d: iteration number=         47 number of flips=        158               
+Recon2d: iteration number=         48 number of flips=        159               
+Recon2d: iteration number=         49 number of flips=        160               
+Recon2d: iteration number=         50 number of flips=        161               
+Recon2d max iterations:         51                                              
+RECON: done.                                                                    
+finish                                                                          
+nodes in point set  =        862                                                
+SGD:      0 total relaxations on point set of    862 indept. nodes.             
+rmpoint/compress                                                                
+         0 points removed and          0 elements removed.                      
+RMPOINT: new point count is          862                                        
+RMPOINT: new element count is        860                                        
+finish                                                                          
+nodes in point set  =        862                                                
+recon/0/0.17500000E-07/                                                         
+RECON2D reconnection loop2d:     1                                              
+Recon2d: iteration number=          1 number of flips=        162               
+Recon2d: iteration number=          2 number of flips=        163               
+Recon2d: iteration number=          3 number of flips=        164               
+Recon2d: iteration number=          4 number of flips=        165               
+Recon2d: iteration number=          5 number of flips=        166               
+Recon2d: iteration number=          6 number of flips=        167               
+Recon2d: iteration number=          7 number of flips=        168               
+Recon2d: iteration number=          8 number of flips=        169               
+Recon2d: iteration number=          9 number of flips=        170               
+Recon2d: iteration number=         10 number of flips=        171               
+Recon2d: iteration number=         11 number of flips=        172               
+Recon2d: iteration number=         12 number of flips=        173               
+Recon2d: iteration number=         13 number of flips=        174               
+Recon2d: iteration number=         14 number of flips=        175               
+Recon2d: iteration number=         15 number of flips=        176               
+Recon2d: iteration number=         16 number of flips=        177               
+Recon2d: iteration number=         17 number of flips=        178               
+Recon2d: iteration number=         18 number of flips=        179               
+Recon2d: iteration number=         19 number of flips=        180               
+Recon2d: iteration number=         20 number of flips=        181               
+Recon2d: iteration number=         21 number of flips=        182               
+Recon2d: iteration number=         22 number of flips=        183               
+Recon2d: iteration number=         23 number of flips=        184               
+Recon2d: iteration number=         24 number of flips=        185               
+Recon2d: iteration number=         25 number of flips=        186               
+Recon2d: iteration number=         26 number of flips=        187               
+Recon2d: iteration number=         27 number of flips=        188               
+Recon2d: iteration number=         28 number of flips=        189               
+Recon2d: iteration number=         29 number of flips=        190               
+Recon2d: iteration number=         30 number of flips=        191               
+Recon2d: iteration number=         31 number of flips=        192               
+Recon2d: iteration number=         32 number of flips=        193               
+Recon2d: iteration number=         33 number of flips=        194               
+Recon2d: iteration number=         34 number of flips=        195               
+Recon2d: iteration number=         35 number of flips=        196               
+Recon2d: iteration number=         36 number of flips=        197               
+Recon2d: iteration number=         37 number of flips=        198               
+Recon2d: iteration number=         38 number of flips=        199               
+Recon2d: iteration number=         39 number of flips=        200               
+Recon2d: iteration number=         40 number of flips=        201               
+Recon2d: iteration number=         41 number of flips=        202               
+Recon2d: iteration number=         42 number of flips=        203               
+Recon2d: iteration number=         43 number of flips=        204               
+Recon2d: iteration number=         44 number of flips=        205               
+Recon2d: iteration number=         45 number of flips=        206               
+Recon2d: iteration number=         46 number of flips=        207               
+Recon2d: iteration number=         47 number of flips=        208               
+Recon2d: iteration number=         48 number of flips=        209               
+Recon2d: iteration number=         49 number of flips=        210               
+Recon2d: iteration number=         50 number of flips=        211               
+Recon2d max iterations:         51                                              
+RECON: done.                                                                    
+finish                                                                          
+nodes in point set  =        862                                                
+SGD:      0 total relaxations on point set of    862 indept. nodes.             
+nodes in point set  =        862                                                
+Face iteration, number of faces:          1        26                           
+Face iteration, number of faces:          1        29                           
+Face iteration, number of faces:          1        44                           
+Face iteration, number of faces:          1        81                           
+Face iteration, number of faces:          1        88                           
+Face iteration, number of faces:          1       106                           
+Face iteration, number of faces:          1       169                           
+Face iteration, number of faces:          1       210                           
+Face iteration, number of faces:          1       282                           
+Face iteration, number of faces:          1       381                           
+Face iteration, number of faces:          1       503                           
+Face iteration, number of faces:          1       783                           
+Face iteration, number of faces:          1       982                           
+Face iteration, number of faces:          1      1350                           
+Face iteration, number of faces:          1      1838                           
+Face iteration, number of faces:          1      2496                           
+Face iteration, number of faces:          1      3259                           
+Face iteration, number of faces:          1      4474                           
+Face iteration, number of faces:          1      6013                           
+Face iteration, number of faces:          1      8320                           
+Face iteration, number of faces:          1     11196                           
+Face iteration, number of faces:          1     15546                           
+Face iteration, number of faces:          1     20722                           
+Face iteration, number of faces:          1     28176                           
+Face iteration, number of faces:          1     38078                           
+Face iteration, number of faces:          1     52228                           
+Face iteration, number of faces:          1     69472                           
+Face iteration, number of faces:          1     91693                           
+Face iteration, number of faces:          1    114856                           
+Face iteration, number of faces:          1    135761                           
+Face iteration, number of faces:          1    140955                           
+Face iteration, number of faces:          1    130111                           
+Face iteration, number of faces:          1     90662                           
+Face iteration, number of faces:          1     53651                           
+Face iteration, number of faces:          1     32252                           
+Face iteration, number of faces:          1     23513                           
+Face iteration, number of faces:          1     21673                           
+Face iteration, number of faces:          1     21486                           
+Face iteration, number of faces:          1     21197                           
+Face iteration, number of faces:          1     21038                           
+Face iteration, number of faces:          1     20716                           
+Face iteration, number of faces:          1     20413                           
+Face iteration, number of faces:          1     20209                           
+Face iteration, number of faces:          1     19516                           
+Face iteration, number of faces:          1     18015                           
+Face iteration, number of faces:          1     15449                           
+Face iteration, number of faces:          1     12553                           
+Face iteration, number of faces:          1     10484                           
+Face iteration, number of faces:          1      9335                           
+Face iteration, number of faces:          1      8926                           
+Face iteration, number of faces:          1      8805                           
+Face iteration, number of faces:          1      8648                           
+Face iteration, number of faces:          1      8384                           
+Face iteration, number of faces:          1      8045                           
+Face iteration, number of faces:          1      7789                           
+Face iteration, number of faces:          1      7554                           
+Face iteration, number of faces:          1      7181                           
+Face iteration, number of faces:          1      6836                           
+Face iteration, number of faces:          1      6750                           
+Face iteration, number of faces:          1      6457                           
+Face iteration, number of faces:          1      6280                           
+Face iteration, number of faces:          1      6174                           
+Face iteration, number of faces:          1      6184                           
+Face iteration, number of faces:          1      6458                           
+Face iteration, number of faces:          1      6681                           
+Face iteration, number of faces:          1      6866                           
+Face iteration, number of faces:          1      6890                           
+Face iteration, number of faces:          1      6617                           
+Face iteration, number of faces:          1      6365                           
+Face iteration, number of faces:          1      6193                           
+Face iteration, number of faces:          1      6198                           
+Face iteration, number of faces:          1      6463                           
+Face iteration, number of faces:          1      6751                           
+Face iteration, number of faces:          1      6979                           
+Face iteration, number of faces:          1      7085                           
+Face iteration, number of faces:          1      6896                           
+Face iteration, number of faces:          1      6617                           
+Face iteration, number of faces:          1      6404                           
+Face iteration, number of faces:          1      6257                           
+Face iteration, number of faces:          1      6382                           
+Face iteration, number of faces:          1      6549                           
+Face iteration, number of faces:          1      6693                           
+Face iteration, number of faces:          1      6717                           
+Face iteration, number of faces:          1      6572                           
+Face iteration, number of faces:          1      6315                           
+Face iteration, number of faces:          1      6111                           
+Face iteration, number of faces:          1      6070                           
+Face iteration, number of faces:          1      6131                           
+Face iteration, number of faces:          1      6256                           
+Face iteration, number of faces:          1      6434                           
+Face iteration, number of faces:          1      6578                           
+Face iteration, number of faces:          1      6809                           
+Face iteration, number of faces:          1      7019                           
+Face iteration, number of faces:          1      6963                           
+Face iteration, number of faces:          1      6597                           
+Face iteration, number of faces:          1      6107                           
+Face iteration, number of faces:          1      5804                           
+Face iteration, number of faces:          1      5773                           
+Face iteration, number of faces:          1      5856                           
+Face iteration, number of faces:          1      5847                           
+Face iteration, number of faces:          1      5877                           
+ max number of iterations exceeded by refine                                    
+recon/0/0.17500000E-07/                                                         
+RECON2D reconnection loop2d:     1                                              
+Recon2d: iteration number=          1 number of flips=     420644               
+Recon2d: iteration number=          2 number of flips=     374755               
+Recon2d: iteration number=          3 number of flips=     355926               
+Recon2d: iteration number=          4 number of flips=     343890               
+Recon2d: iteration number=          5 number of flips=     330852               
+Recon2d: iteration number=          6 number of flips=     316944               
+Recon2d: iteration number=          7 number of flips=     304334               
+Recon2d: iteration number=          8 number of flips=     288490               
+Recon2d: iteration number=          9 number of flips=     274899               
+Recon2d: iteration number=         10 number of flips=     257046               
+Recon2d: iteration number=         11 number of flips=     243430               
+Recon2d: iteration number=         12 number of flips=     227475               
+Recon2d: iteration number=         13 number of flips=     213565               
+Recon2d: iteration number=         14 number of flips=     197608               
+Recon2d: iteration number=         15 number of flips=     185086               
+Recon2d: iteration number=         16 number of flips=     170011               
+Recon2d: iteration number=         17 number of flips=     158159               
+Recon2d: iteration number=         18 number of flips=     143561               
+Recon2d: iteration number=         19 number of flips=     132720               
+Recon2d: iteration number=         20 number of flips=     119617               
+Recon2d: iteration number=         21 number of flips=     109237               
+Recon2d: iteration number=         22 number of flips=      96130               
+Recon2d: iteration number=         23 number of flips=      86014               
+Recon2d: iteration number=         24 number of flips=      74169               
+Recon2d: iteration number=         25 number of flips=      64833               
+Recon2d: iteration number=         26 number of flips=      55129               
+Recon2d: iteration number=         27 number of flips=      48441               
+Recon2d: iteration number=         28 number of flips=      40861               
+Recon2d: iteration number=         29 number of flips=      35451               
+Recon2d: iteration number=         30 number of flips=      29804               
+Recon2d: iteration number=         31 number of flips=      25852               
+Recon2d: iteration number=         32 number of flips=      21987               
+Recon2d: iteration number=         33 number of flips=      19355               
+Recon2d: iteration number=         34 number of flips=      16682               
+Recon2d: iteration number=         35 number of flips=      14763               
+Recon2d: iteration number=         36 number of flips=      12697               
+Recon2d: iteration number=         37 number of flips=      10782               
+Recon2d: iteration number=         38 number of flips=       8783               
+Recon2d: iteration number=         39 number of flips=       7424               
+Recon2d: iteration number=         40 number of flips=       6315               
+Recon2d: iteration number=         41 number of flips=       5399               
+Recon2d: iteration number=         42 number of flips=       4453               
+Recon2d: iteration number=         43 number of flips=       3638               
+Recon2d: iteration number=         44 number of flips=       2982               
+Recon2d: iteration number=         45 number of flips=       2556               
+Recon2d: iteration number=         46 number of flips=       2148               
+Recon2d: iteration number=         47 number of flips=       1888               
+Recon2d: iteration number=         48 number of flips=       1722               
+Recon2d: iteration number=         49 number of flips=       1521               
+Recon2d: iteration number=         50 number of flips=       1381               
+Recon2d max iterations:         51                                              
+RECON: done.                                                                    
+finish                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+RECON2D reconnection loop2d:     1                                              
+Recon2d: iteration number=          1 number of flips=      18939               
+Recon2d: iteration number=          2 number of flips=       1292               
+Recon2d: iteration number=          3 number of flips=       1139               
+Recon2d: iteration number=          4 number of flips=       1059               
+Recon2d: iteration number=          5 number of flips=        969               
+Recon2d: iteration number=          6 number of flips=        899               
+Recon2d: iteration number=          7 number of flips=        852               
+Recon2d: iteration number=          8 number of flips=        818               
+Recon2d: iteration number=          9 number of flips=        751               
+Recon2d: iteration number=         10 number of flips=        705               
+Recon2d: iteration number=         11 number of flips=        657               
+Recon2d: iteration number=         12 number of flips=        595               
+Recon2d: iteration number=         13 number of flips=        525               
+Recon2d: iteration number=         14 number of flips=        434               
+Recon2d: iteration number=         15 number of flips=        391               
+Recon2d: iteration number=         16 number of flips=        342               
+Recon2d: iteration number=         17 number of flips=        304               
+Recon2d: iteration number=         18 number of flips=        270               
+Recon2d: iteration number=         19 number of flips=        249               
+Recon2d: iteration number=         20 number of flips=        210               
+Recon2d: iteration number=         21 number of flips=        181               
+Recon2d: iteration number=         22 number of flips=        168               
+Recon2d: iteration number=         23 number of flips=        139               
+Recon2d: iteration number=         24 number of flips=        122               
+Recon2d: iteration number=         25 number of flips=        114               
+Recon2d: iteration number=         26 number of flips=        104               
+Recon2d: iteration number=         27 number of flips=         97               
+Recon2d: iteration number=         28 number of flips=         92               
+Recon2d: iteration number=         29 number of flips=         84               
+Recon2d: iteration number=         30 number of flips=         80               
+Recon2d: iteration number=         31 number of flips=         72               
+Recon2d: iteration number=         32 number of flips=         65               
+Recon2d: iteration number=         33 number of flips=         61               
+Recon2d: iteration number=         34 number of flips=         58               
+Recon2d: iteration number=         35 number of flips=         54               
+Recon2d: iteration number=         36 number of flips=         51               
+Recon2d: iteration number=         37 number of flips=         48               
+Recon2d: iteration number=         38 number of flips=         44               
+Recon2d: iteration number=         39 number of flips=         45               
+Recon2d: iteration number=         40 number of flips=         44               
+Recon2d: iteration number=         41 number of flips=         45               
+Recon2d: iteration number=         42 number of flips=         36               
+Recon2d: iteration number=         43 number of flips=         32               
+Recon2d: iteration number=         44 number of flips=         31               
+Recon2d: iteration number=         45 number of flips=         30               
+Recon2d: iteration number=         46 number of flips=         30               
+Recon2d: iteration number=         47 number of flips=         31               
+Recon2d: iteration number=         48 number of flips=         27               
+Recon2d: iteration number=         49 number of flips=         28               
+Recon2d: iteration number=         50 number of flips=         26               
+Recon2d max iterations:         51                                              
+RECON: done.                                                                    
+cmo select mo1                                                                  
+smooth                                                                          
+SMOOTH: position option                                                         
+nodes in point set  =    1662445                                                
+SMOOTH: Smooth 2D triangular mesh using ESUG                                    
+ Min. area BEFORE smoothing= 0.1007080E-02                                      
+ Max. area BEFORE smoothing= 0.1593840E+06                                      
+Iteration=   1; root mean square error= 0.5834777E+00                           
+Iteration=   2; root mean square error= 0.4207036E+00                           
+Iteration=   3; root mean square error= 0.3408822E+00                           
+Iteration=   4; root mean square error= 0.2892318E+00                           
+Iteration=   5; root mean square error= 0.2544291E+00                           
+Iteration=   6; root mean square error= 0.2319263E+00                           
+Iteration=   7; root mean square error= 0.2092923E+00                           
+Iteration=   8; root mean square error= 0.1897953E+00                           
+Iteration=   9; root mean square error= 0.1742458E+00                           
+Iteration=  10; root mean square error= 0.1628431E+00                           
+Iteration=  11; root mean square error= 0.1548623E+00                           
+Iteration=  12; root mean square error= 0.1501465E+00                           
+Iteration=  13; root mean square error= 0.1452185E+00                           
+Iteration=  14; root mean square error= 0.1377924E+00                           
+Iteration=  15; root mean square error= 0.1326360E+00                           
+Iteration=  16; root mean square error= 0.1294383E+00                           
+Iteration=  17; root mean square error= 0.1245094E+00                           
+Iteration=  18; root mean square error= 0.1216487E+00                           
+Iteration=  19; root mean square error= 0.1197812E+00                           
+Iteration=  20; root mean square error= 0.1175399E+00                           
+Iteration=  21; root mean square error= 0.1149590E+00                           
+Iteration=  22; root mean square error= 0.1124382E+00                           
+Iteration=  23; root mean square error= 0.1104886E+00                           
+Iteration=  24; root mean square error= 0.1077848E+00                           
+Iteration=  25; root mean square error= 0.1054412E+00                           
+ Min. area AFTER smoothing= 0.1007080E-02                                       
+ Max. area AFTER smoothing= 0.2366614E+05                                       
+cmo select mo1                                                                  
+recon/0/                                                                        
+RECON2D reconnection loop2d:     1                                              
+Recon2d: iteration number=          1 number of flips=     864718               
+Recon2d: iteration number=          2 number of flips=     818811               
+Recon2d: iteration number=          3 number of flips=     701137               
+Recon2d: iteration number=          4 number of flips=     588988               
+Recon2d: iteration number=          5 number of flips=     472932               
+Recon2d: iteration number=          6 number of flips=     355564               
+Recon2d: iteration number=          7 number of flips=     250486               
+Recon2d: iteration number=          8 number of flips=     163882               
+Recon2d: iteration number=          9 number of flips=      94497               
+Recon2d: iteration number=         10 number of flips=      48882               
+Recon2d: iteration number=         11 number of flips=      22490               
+Recon2d: iteration number=         12 number of flips=       9330               
+Recon2d: iteration number=         13 number of flips=       3575               
+Recon2d: iteration number=         14 number of flips=       1423               
+Recon2d: iteration number=         15 number of flips=        682               
+Recon2d: iteration number=         16 number of flips=        442               
+Recon2d: iteration number=         17 number of flips=        306               
+Recon2d: iteration number=         18 number of flips=        235               
+Recon2d: iteration number=         19 number of flips=        187               
+Recon2d: iteration number=         20 number of flips=        162               
+Recon2d: iteration number=         21 number of flips=        144               
+Recon2d: iteration number=         22 number of flips=        132               
+Recon2d: iteration number=         23 number of flips=        109               
+Recon2d: iteration number=         24 number of flips=        102               
+Recon2d: iteration number=         25 number of flips=         94               
+Recon2d: iteration number=         26 number of flips=         80               
+Recon2d: iteration number=         27 number of flips=         66               
+Recon2d: iteration number=         28 number of flips=         58               
+Recon2d: iteration number=         29 number of flips=         48               
+Recon2d: iteration number=         30 number of flips=         43               
+Recon2d: iteration number=         31 number of flips=         40               
+Recon2d: iteration number=         32 number of flips=         34               
+Recon2d: iteration number=         33 number of flips=         28               
+Recon2d: iteration number=         34 number of flips=         23               
+Recon2d: iteration number=         35 number of flips=         20               
+Recon2d: iteration number=         36 number of flips=         16               
+Recon2d: iteration number=         37 number of flips=         16               
+Recon2d: iteration number=         38 number of flips=         15               
+Recon2d: iteration number=         39 number of flips=         12               
+Recon2d: iteration number=         40 number of flips=         13               
+Recon2d: iteration number=         41 number of flips=         13               
+Recon2d: iteration number=         42 number of flips=         11               
+Recon2d: iteration number=         43 number of flips=          9               
+Recon2d: iteration number=         44 number of flips=          9               
+Recon2d: iteration number=         45 number of flips=          7               
+Recon2d: iteration number=         46 number of flips=          8               
+Recon2d: iteration number=         47 number of flips=          8               
+Recon2d: iteration number=         48 number of flips=          9               
+Recon2d: iteration number=         49 number of flips=          6               
+Recon2d: iteration number=         50 number of flips=          5               
+Recon2d max iterations:         51                                              
+RECON: done.                                                                    
+cmo select mo1                                                                  
+smooth                                                                          
+SMOOTH: position option                                                         
+nodes in point set  =    1662445                                                
+SMOOTH: Smooth 2D triangular mesh using ESUG                                    
+ Min. area BEFORE smoothing= 0.7112370E-04                                      
+ Max. area BEFORE smoothing= 0.4473721E+05                                      
+Iteration=   1; root mean square error= 0.5370400E+00                           
+Iteration=   2; root mean square error= 0.3542615E+00                           
+Iteration=   3; root mean square error= 0.2636874E+00                           
+Iteration=   4; root mean square error= 0.2181540E+00                           
+Iteration=   5; root mean square error= 0.1922622E+00                           
+Iteration=   6; root mean square error= 0.1754977E+00                           
+Iteration=   7; root mean square error= 0.1633073E+00                           
+Iteration=   8; root mean square error= 0.1543499E+00                           
+Iteration=   9; root mean square error= 0.1478167E+00                           
+Iteration=  10; root mean square error= 0.1429392E+00                           
+Iteration=  11; root mean square error= 0.1393923E+00                           
+Iteration=  12; root mean square error= 0.1361317E+00                           
+Iteration=  13; root mean square error= 0.1325529E+00                           
+Iteration=  14; root mean square error= 0.1294715E+00                           
+Iteration=  15; root mean square error= 0.1265981E+00                           
+Iteration=  16; root mean square error= 0.1240531E+00                           
+Iteration=  17; root mean square error= 0.1217180E+00                           
+Iteration=  18; root mean square error= 0.1196229E+00                           
+Iteration=  19; root mean square error= 0.1176934E+00                           
+Iteration=  20; root mean square error= 0.1157646E+00                           
+Iteration=  21; root mean square error= 0.1138596E+00                           
+Iteration=  22; root mean square error= 0.1120635E+00                           
+Iteration=  23; root mean square error= 0.1103540E+00                           
+Iteration=  24; root mean square error= 0.1086947E+00                           
+Iteration=  25; root mean square error= 0.1071715E+00                           
+ Min. area AFTER smoothing= 0.7112370E-04                                       
+ Max. area AFTER smoothing= 0.1304537E+05                                       
+cmo select mo1                                                                  
+recon/0/                                                                        
+RECON2D reconnection loop2d:     1                                              
+Recon2d: iteration number=          1 number of flips=     444793               
+Recon2d: iteration number=          2 number of flips=      81460               
+Recon2d: iteration number=          3 number of flips=      25905               
+Recon2d: iteration number=          4 number of flips=       6838               
+Recon2d: iteration number=          5 number of flips=       2640               
+Recon2d: iteration number=          6 number of flips=       1109               
+Recon2d: iteration number=          7 number of flips=        552               
+Recon2d: iteration number=          8 number of flips=        279               
+Recon2d: iteration number=          9 number of flips=        167               
+Recon2d: iteration number=         10 number of flips=        124               
+Recon2d: iteration number=         11 number of flips=         95               
+Recon2d: iteration number=         12 number of flips=         63               
+Recon2d: iteration number=         13 number of flips=         50               
+Recon2d: iteration number=         14 number of flips=         26               
+Recon2d: iteration number=         15 number of flips=         18               
+Recon2d: iteration number=         16 number of flips=         20               
+Recon2d: iteration number=         17 number of flips=         10               
+Recon2d: iteration number=         18 number of flips=          7               
+Recon2d: iteration number=         19 number of flips=          3               
+Recon2d: iteration number=         20 number of flips=          1               
+Recon2d: iteration number=         21 number of flips=          1               
+RECON: done.                                                                    
+cmo select mo1                                                                  
+smooth                                                                          
+SMOOTH: position option                                                         
+nodes in point set  =    1662445                                                
+SMOOTH: Smooth 2D triangular mesh using ESUG                                    
+ Min. area BEFORE smoothing= 0.8086674E-04                                      
+ Max. area BEFORE smoothing= 0.1388620E+05                                      
+Iteration=   1; root mean square error= 0.3072223E+00                           
+Iteration=   2; root mean square error= 0.1752577E+00                           
+Iteration=   3; root mean square error= 0.1371026E+00                           
+Iteration=   4; root mean square error= 0.1239864E+00                           
+Iteration=   5; root mean square error= 0.1165307E+00                           
+Iteration=   6; root mean square error= 0.1114143E+00                           
+Iteration=   7; root mean square error= 0.1075368E+00                           
+Iteration=   8; root mean square error= 0.1044369E+00                           
+Iteration=   9; root mean square error= 0.1018541E+00                           
+Iteration=  10; root mean square error= 0.9962278E-01                           
+Iteration=  11; root mean square error= 0.9765046E-01                           
+Iteration=  12; root mean square error= 0.9587711E-01                           
+Iteration=  13; root mean square error= 0.9427280E-01                           
+Iteration=  14; root mean square error= 0.9279790E-01                           
+Iteration=  15; root mean square error= 0.9143242E-01                           
+Iteration=  16; root mean square error= 0.9016424E-01                           
+Iteration=  17; root mean square error= 0.8897972E-01                           
+Iteration=  18; root mean square error= 0.8786736E-01                           
+Iteration=  19; root mean square error= 0.8682003E-01                           
+Iteration=  20; root mean square error= 0.8582913E-01                           
+Iteration=  21; root mean square error= 0.8488936E-01                           
+Iteration=  22; root mean square error= 0.8399520E-01                           
+Iteration=  23; root mean square error= 0.8313789E-01                           
+Iteration=  24; root mean square error= 0.8231701E-01                           
+Iteration=  25; root mean square error= 0.8153192E-01                           
+ Min. area AFTER smoothing= 0.1472573E-03                                       
+ Max. area AFTER smoothing= 0.6072696E+04                                       
+cmo select mo1                                                                  
+recon/0/                                                                        
+RECON2D reconnection loop2d:     1                                              
+Recon2d: iteration number=          1 number of flips=     182770               
+Recon2d: iteration number=          2 number of flips=      14544               
+Recon2d: iteration number=          3 number of flips=       4311               
+Recon2d: iteration number=          4 number of flips=        881               
+Recon2d: iteration number=          5 number of flips=        286               
+Recon2d: iteration number=          6 number of flips=         89               
+Recon2d: iteration number=          7 number of flips=         40               
+Recon2d: iteration number=          8 number of flips=         16               
+Recon2d: iteration number=          9 number of flips=          6               
+Recon2d: iteration number=         10 number of flips=          3               
+Recon2d: iteration number=         11 number of flips=          1               
+Recon2d: iteration number=         12 number of flips=          2               
+Recon2d: iteration number=         13 number of flips=          2               
+Recon2d: iteration number=         14 number of flips=          3               
+Recon2d: iteration number=         15 number of flips=          2               
+RECON: done.                                                                    
+cmo select mo1                                                                  
+resetpts/itp                                                                    
+geniee                                                                          
+finish                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+RECON2D reconnection loop2d:     1                                              
+Recon2d: iteration number=          1 number of flips=         42               
+RECON: done.                                                                    
+cmo select mo1                                                                  
+smooth                                                                          
+SMOOTH: position option                                                         
+nodes in point set  =    1662445                                                
+SMOOTH: Smooth 2D triangular mesh using ESUG                                    
+ Min. area BEFORE smoothing= 0.1472573E-03                                      
+ Max. area BEFORE smoothing= 0.5194609E+04                                      
+Iteration=   1; root mean square error= 0.2052912E+00                           
+Iteration=   2; root mean square error= 0.1142667E+00                           
+Iteration=   3; root mean square error= 0.9142487E-01                           
+Iteration=   4; root mean square error= 0.8515629E-01                           
+Iteration=   5; root mean square error= 0.8221141E-01                           
+Iteration=   6; root mean square error= 0.8029873E-01                           
+Iteration=   7; root mean square error= 0.7884881E-01                           
+Iteration=   8; root mean square error= 0.7765332E-01                           
+Iteration=   9; root mean square error= 0.7661763E-01                           
+Iteration=  10; root mean square error= 0.7569240E-01                           
+Iteration=  11; root mean square error= 0.7484893E-01                           
+Iteration=  12; root mean square error= 0.7406905E-01                           
+Iteration=  13; root mean square error= 0.7334055E-01                           
+Iteration=  14; root mean square error= 0.7265476E-01                           
+Iteration=  15; root mean square error= 0.7200540E-01                           
+Iteration=  16; root mean square error= 0.7138760E-01                           
+Iteration=  17; root mean square error= 0.7079758E-01                           
+Iteration=  18; root mean square error= 0.7023229E-01                           
+Iteration=  19; root mean square error= 0.6968927E-01                           
+Iteration=  20; root mean square error= 0.6916646E-01                           
+Iteration=  21; root mean square error= 0.6866213E-01                           
+Iteration=  22; root mean square error= 0.6817478E-01                           
+Iteration=  23; root mean square error= 0.6770312E-01                           
+Iteration=  24; root mean square error= 0.6724604E-01                           
+Iteration=  25; root mean square error= 0.6680254E-01                           
+ Min. area AFTER smoothing= 0.2638843E-03                                       
+ Max. area AFTER smoothing= 0.2951788E+04                                       
+cmo select mo1                                                                  
+recon/0/                                                                        
+RECON2D reconnection loop2d:     1                                              
+Recon2d: iteration number=          1 number of flips=      71635               
+Recon2d: iteration number=          2 number of flips=       2114               
+Recon2d: iteration number=          3 number of flips=        372               
+Recon2d: iteration number=          4 number of flips=         22               
+Recon2d: iteration number=          5 number of flips=          8               
+Recon2d: iteration number=          6 number of flips=          1               
+RECON: done.                                                                    
+cmo select mo1                                                                  
+smooth                                                                          
+SMOOTH: position option                                                         
+nodes in point set  =    1662445                                                
+SMOOTH: Smooth 2D triangular mesh using ESUG                                    
+ Min. area BEFORE smoothing= 0.2638843E-03                                      
+ Max. area BEFORE smoothing= 0.2437981E+04                                      
+Iteration=   1; root mean square error= 0.1421577E+00                           
+Iteration=   2; root mean square error= 0.8489854E-01                           
+Iteration=   3; root mean square error= 0.7170587E-01                           
+Iteration=   4; root mean square error= 0.6842336E-01                           
+Iteration=   5; root mean square error= 0.6691557E-01                           
+Iteration=   6; root mean square error= 0.6595547E-01                           
+Iteration=   7; root mean square error= 0.6522956E-01                           
+Iteration=   8; root mean square error= 0.6462465E-01                           
+Iteration=   9; root mean square error= 0.6409211E-01                           
+Iteration=  10; root mean square error= 0.6360728E-01                           
+Iteration=  11; root mean square error= 0.6315636E-01                           
+Iteration=  12; root mean square error= 0.6273112E-01                           
+Iteration=  13; root mean square error= 0.6232635E-01                           
+Iteration=  14; root mean square error= 0.6193850E-01                           
+Iteration=  15; root mean square error= 0.6156509E-01                           
+Iteration=  16; root mean square error= 0.6120429E-01                           
+Iteration=  17; root mean square error= 0.6085472E-01                           
+Iteration=  18; root mean square error= 0.6051527E-01                           
+Iteration=  19; root mean square error= 0.6018508E-01                           
+Iteration=  20; root mean square error= 0.5986342E-01                           
+Iteration=  21; root mean square error= 0.5954969E-01                           
+Iteration=  22; root mean square error= 0.5924338E-01                           
+Iteration=  23; root mean square error= 0.5894402E-01                           
+Iteration=  24; root mean square error= 0.5865123E-01                           
+Iteration=  25; root mean square error= 0.5836467E-01                           
+ Min. area AFTER smoothing= 0.2071315E-01                                       
+ Max. area AFTER smoothing= 0.1934557E+04                                       
+cmo select mo1                                                                  
+recon/0/                                                                        
+RECON2D reconnection loop2d:     1                                              
+Recon2d: iteration number=          1 number of flips=      35516               
+Recon2d: iteration number=          2 number of flips=        414               
+Recon2d: iteration number=          3 number of flips=         60               
+Recon2d: iteration number=          4 number of flips=          2               
+RECON: done.                                                                    
+cmo select mo1                                                                  
+smooth                                                                          
+SMOOTH: position option                                                         
+nodes in point set  =    1662445                                                
+SMOOTH: Smooth 2D triangular mesh using ESUG                                    
+ Min. area BEFORE smoothing= 0.1675743E-01                                      
+ Max. area BEFORE smoothing= 0.1934557E+04                                      
+Iteration=   1; root mean square error= 0.1220127E+00                           
+Iteration=   2; root mean square error= 0.7374135E-01                           
+Iteration=   3; root mean square error= 0.6284465E-01                           
+Iteration=   4; root mean square error= 0.6031964E-01                           
+Iteration=   5; root mean square error= 0.5915835E-01                           
+Iteration=   6; root mean square error= 0.5842344E-01                           
+Iteration=   7; root mean square error= 0.5787539E-01                           
+Iteration=   8; root mean square error= 0.5742535E-01                           
+Iteration=   9; root mean square error= 0.5703340E-01                           
+Iteration=  10; root mean square error= 0.5667923E-01                           
+Iteration=  11; root mean square error= 0.5635150E-01                           
+Iteration=  12; root mean square error= 0.5604335E-01                           
+Iteration=  13; root mean square error= 0.5575041E-01                           
+Iteration=  14; root mean square error= 0.5546975E-01                           
+Iteration=  15; root mean square error= 0.5519933E-01                           
+Iteration=  16; root mean square error= 0.5493765E-01                           
+Iteration=  17; root mean square error= 0.5468362E-01                           
+Iteration=  18; root mean square error= 0.5443638E-01                           
+Iteration=  19; root mean square error= 0.5419526E-01                           
+Iteration=  20; root mean square error= 0.5395973E-01                           
+Iteration=  21; root mean square error= 0.5372935E-01                           
+Iteration=  22; root mean square error= 0.5350375E-01                           
+Iteration=  23; root mean square error= 0.5328262E-01                           
+Iteration=  24; root mean square error= 0.5306570E-01                           
+Iteration=  25; root mean square error= 0.5285275E-01                           
+ Min. area AFTER smoothing= 0.2656227E-01                                       
+ Max. area AFTER smoothing= 0.1435470E+04                                       
+cmo select mo1                                                                  
+recon/0/                                                                        
+RECON2D reconnection loop2d:     1                                              
+Recon2d: iteration number=          1 number of flips=      23127               
+Recon2d: iteration number=          2 number of flips=        158               
+Recon2d: iteration number=          3 number of flips=         23               
+RECON: done.                                                                    
+cmo select mo1                                                                  
+smooth                                                                          
+SMOOTH: position option                                                         
+nodes in point set  =    1662445                                                
+SMOOTH: Smooth 2D triangular mesh using ESUG                                    
+ Min. area BEFORE smoothing= 0.1445003E-01                                      
+ Max. area BEFORE smoothing= 0.1330433E+04                                      
+Iteration=   1; root mean square error= 0.1082127E+00                           
+Iteration=   2; root mean square error= 0.6632171E-01                           
+Iteration=   3; root mean square error= 0.5687542E-01                           
+Iteration=   4; root mean square error= 0.5473946E-01                           
+Iteration=   5; root mean square error= 0.5377534E-01                           
+Iteration=   6; root mean square error= 0.5316871E-01                           
+Iteration=   7; root mean square error= 0.5271904E-01                           
+Iteration=   8; root mean square error= 0.5235321E-01                           
+Iteration=   9; root mean square error= 0.5203793E-01                           
+Iteration=  10; root mean square error= 0.5175569E-01                           
+Iteration=  11; root mean square error= 0.5149648E-01                           
+Iteration=  12; root mean square error= 0.5125413E-01                           
+Iteration=  13; root mean square error= 0.5102466E-01                           
+Iteration=  14; root mean square error= 0.5080540E-01                           
+Iteration=  15; root mean square error= 0.5059445E-01                           
+Iteration=  16; root mean square error= 0.5039047E-01                           
+Iteration=  17; root mean square error= 0.5019246E-01                           
+Iteration=  18; root mean square error= 0.4999966E-01                           
+Iteration=  19; root mean square error= 0.4981148E-01                           
+Iteration=  20; root mean square error= 0.4962745E-01                           
+Iteration=  21; root mean square error= 0.4944721E-01                           
+Iteration=  22; root mean square error= 0.4927044E-01                           
+Iteration=  23; root mean square error= 0.4909689E-01                           
+Iteration=  24; root mean square error= 0.4892635E-01                           
+Iteration=  25; root mean square error= 0.4875864E-01                           
+ Min. area AFTER smoothing= 0.2993350E-01                                       
+ Max. area AFTER smoothing= 0.1058653E+04                                       
+cmo select mo1                                                                  
+recon/0/                                                                        
+RECON2D reconnection loop2d:     1                                              
+Recon2d: iteration number=          1 number of flips=      18249               
+Recon2d: iteration number=          2 number of flips=        110               
+Recon2d: iteration number=          3 number of flips=          6               
+RECON: done.                                                                    
+cmo select mo1                                                                  
+smooth                                                                          
+SMOOTH: position option                                                         
+nodes in point set  =    1662445                                                
+SMOOTH: Smooth 2D triangular mesh using ESUG                                    
+ Min. area BEFORE smoothing= 0.1990631E-01                                      
+ Max. area BEFORE smoothing= 0.1058653E+04                                      
+Iteration=   1; root mean square error= 0.1012841E+00                           
+Iteration=   2; root mean square error= 0.6216056E-01                           
+Iteration=   3; root mean square error= 0.5284952E-01                           
+Iteration=   4; root mean square error= 0.5070759E-01                           
+Iteration=   5; root mean square error= 0.4977107E-01                           
+Iteration=   6; root mean square error= 0.4920739E-01                           
+Iteration=   7; root mean square error= 0.4880573E-01                           
+Iteration=   8; root mean square error= 0.4848798E-01                           
+Iteration=   9; root mean square error= 0.4821919E-01                           
+Iteration=  10; root mean square error= 0.4798155E-01                           
+Iteration=  11; root mean square error= 0.4776513E-01                           
+Iteration=  12; root mean square error= 0.4756394E-01                           
+Iteration=  13; root mean square error= 0.4737420E-01                           
+Iteration=  14; root mean square error= 0.4719340E-01                           
+Iteration=  15; root mean square error= 0.4701979E-01                           
+Iteration=  16; root mean square error= 0.4685212E-01                           
+Iteration=  17; root mean square error= 0.4668950E-01                           
+Iteration=  18; root mean square error= 0.4653122E-01                           
+Iteration=  19; root mean square error= 0.4637675E-01                           
+Iteration=  20; root mean square error= 0.4622568E-01                           
+Iteration=  21; root mean square error= 0.4607768E-01                           
+Iteration=  22; root mean square error= 0.4593247E-01                           
+Iteration=  23; root mean square error= 0.4578983E-01                           
+Iteration=  24; root mean square error= 0.4564957E-01                           
+Iteration=  25; root mean square error= 0.4551154E-01                           
+ Min. area AFTER smoothing= 0.2983904E-01                                       
+ Max. area AFTER smoothing= 0.9520212E+03                                       
+cmo select mo1                                                                  
+recon/0/                                                                        
+RECON2D reconnection loop2d:     1                                              
+Recon2d: iteration number=          1 number of flips=      15640               
+Recon2d: iteration number=          2 number of flips=         48               
+Recon2d: iteration number=          3 number of flips=          4               
+RECON: done.                                                                    
+cmo select mo1                                                                  
+smooth                                                                          
+SMOOTH: position option                                                         
+nodes in point set  =    1662445                                                
+SMOOTH: Smooth 2D triangular mesh using ESUG                                    
+ Min. area BEFORE smoothing= 0.2129558E-01                                      
+ Max. area BEFORE smoothing= 0.9520212E+03                                      
+Iteration=   1; root mean square error= 0.9574839E-01                           
+Iteration=   2; root mean square error= 0.5838099E-01                           
+Iteration=   3; root mean square error= 0.4950376E-01                           
+Iteration=   4; root mean square error= 0.4748028E-01                           
+Iteration=   5; root mean square error= 0.4660508E-01                           
+Iteration=   6; root mean square error= 0.4608654E-01                           
+Iteration=   7; root mean square error= 0.4572223E-01                           
+Iteration=   8; root mean square error= 0.4543809E-01                           
+Iteration=   9; root mean square error= 0.4520082E-01                           
+Iteration=  10; root mean square error= 0.4499328E-01                           
+Iteration=  11; root mean square error= 0.4480587E-01                           
+Iteration=  12; root mean square error= 0.4463280E-01                           
+Iteration=  13; root mean square error= 0.4447038E-01                           
+Iteration=  14; root mean square error= 0.4431620E-01                           
+Iteration=  15; root mean square error= 0.4416855E-01                           
+Iteration=  16; root mean square error= 0.4402625E-01                           
+Iteration=  17; root mean square error= 0.4388842E-01                           
+Iteration=  18; root mean square error= 0.4375442E-01                           
+Iteration=  19; root mean square error= 0.4362373E-01                           
+Iteration=  20; root mean square error= 0.4349596E-01                           
+Iteration=  21; root mean square error= 0.4337080E-01                           
+Iteration=  22; root mean square error= 0.4324801E-01                           
+Iteration=  23; root mean square error= 0.4312737E-01                           
+Iteration=  24; root mean square error= 0.4300872E-01                           
+Iteration=  25; root mean square error= 0.4289190E-01                           
+ Min. area AFTER smoothing= 0.2998863E-01                                       
+ Max. area AFTER smoothing= 0.8037218E+03                                       
+cmo select mo1                                                                  
+recon/0/                                                                        
+RECON2D reconnection loop2d:     1                                              
+Recon2d: iteration number=          1 number of flips=      13788               
+Recon2d: iteration number=          2 number of flips=         47               
+Recon2d: iteration number=          3 number of flips=          5               
+RECON: done.                                                                    
+cmo select mo1                                                                  
+massage/5.6000000000000005/1.75e-08/1.75e-08                                    
+nodes in point set  =    1662445                                                
+recon/0/0.17500000E-07/                                                         
+RECON2D reconnection loop2d:     1                                              
+RECON: done.                                                                    
+finish                                                                          
+nodes in point set  =    1662445                                                
+SGD:  13321 total relaxations on point set of ****** indept. nodes.             
+rmpoint/compress                                                                
+         0 points removed and          0 elements removed.                      
+RMPOINT: new point count is      1662445                                        
+RMPOINT: new element count is    3323610                                        
+finish                                                                          
+nodes in point set  =    1662445                                                
+recon/0/0.17500000E-07/                                                         
+RECON2D reconnection loop2d:     1                                              
+Recon2d: iteration number=          1 number of flips=       3031               

@@ -85,7 +85,7 @@ def _plot_raster(dem_array,
 
     try:
         cax = ax.contourf(dem_array,
-                          np.arange(vmin,vmax,10),
+                          np.arange(vmin,vmax,1), # change from 10 to 1!
                           extent=extent, 
                           cmap=topocmap,
                           vmin=vmin,

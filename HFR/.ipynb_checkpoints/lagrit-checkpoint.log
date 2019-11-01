@@ -1,0 +1,358 @@
+read/poly_1.inp/mo_poly_work                                                    
+read/intersections_1.inp/mo_line_work                                           
+cmo/create/mo1/0/0/triplane                                                     
+cmo select mo_poly_work                                                         
+copypts/mo1/mo_poly_work                                                        
+cmo select mo1                                                                  
+cmo/select/mo1                                                                  
+cmo select mo1                                                                  
+triangulate/clockwise                                                           
+cmo select mo1                                                                  
+cmo/setatt/mo1/imt/1,0,0/1                                                      
+cmo select mo1                                                                  
+cmo/setatt/mo1/itetclr/1,0,0/1                                                  
+cmo select mo1                                                                  
+resetpts/itp                                                                    
+cmo select mo1                                                                  
+cmo/select/mo1                                                                  
+cmo select mo1                                                                  
+massage/112.0/1.75e-07/1.75e-07                                                 
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+resetpts/itp                                                                    
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+massage/56.0/1.75e-07/1.75e-07                                                  
+cmo select mo1                                                                  
+resetpts/itp                                                                    
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+massage/28.0/1.75e-07/1.75e-07                                                  
+cmo select mo1                                                                  
+resetpts/itp                                                                    
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+massage/14.0/1.75e-07/1.75e-07                                                  
+cmo select mo1                                                                  
+resetpts/itp                                                                    
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+cmo/addatt/mo1/x_four/vdouble/scalar/nnodes/linear/permanent//0.0               
+cmo select mo1                                                                  
+cmo/addatt/mo1/fac_n/vdouble/scalar/nnodes/linear/permanent//0.0                
+define/mo_pts/mo1                                                               
+define/PARAM_A/0.5                                                              
+define/PARAM_A2/0.25                                                            
+define/PARAM_B/1.3125                                                           
+define/PARAM_B2/1.53125                                                         
+cmo select mo1                                                                  
+massage2/user_function2.lgi/1.4000000000000001/fac_n/1e-05/1e-05/1,0,0/strictmer
+cmo/DELATT/mo_pts/dfield                                                        
+compute/distance_field/mo_pts/mo_line_work/dfield                               
+math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A2/                       
+math/add/mo_pts/x_four/1,0,0/mo_pts/x_four/PARAM_B2/                            
+cmo/copyatt/mo_pts/mo_pts/fac_n/x_four                                          
+finish                                                                          
+cmo/DELATT/mo_pts/dfield                                                        
+compute/distance_field/mo_pts/mo_line_work/dfield                               
+math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A2/                       
+math/add/mo_pts/x_four/1,0,0/mo_pts/x_four/PARAM_B2/                            
+cmo/copyatt/mo_pts/mo_pts/fac_n/x_four                                          
+finish                                                                          
+cmo/DELATT/mo_pts/dfield                                                        
+compute/distance_field/mo_pts/mo_line_work/dfield                               
+math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A2/                       
+math/add/mo_pts/x_four/1,0,0/mo_pts/x_four/PARAM_B2/                            
+cmo/copyatt/mo_pts/mo_pts/fac_n/x_four                                          
+finish                                                                          
+cmo/DELATT/mo_pts/dfield                                                        
+compute/distance_field/mo_pts/mo_line_work/dfield                               
+math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A2/                       
+math/add/mo_pts/x_four/1,0,0/mo_pts/x_four/PARAM_B2/                            
+cmo/copyatt/mo_pts/mo_pts/fac_n/x_four                                          
+finish                                                                          
+cmo/DELATT/mo_pts/dfield                                                        
+compute/distance_field/mo_pts/mo_line_work/dfield                               
+math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A2/                       
+math/add/mo_pts/x_four/1,0,0/mo_pts/x_four/PARAM_B2/                            
+cmo/copyatt/mo_pts/mo_pts/fac_n/x_four                                          
+finish                                                                          
+cmo/DELATT/mo_pts/dfield                                                        
+compute/distance_field/mo_pts/mo_line_work/dfield                               
+math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A2/                       
+math/add/mo_pts/x_four/1,0,0/mo_pts/x_four/PARAM_B2/                            
+cmo/copyatt/mo_pts/mo_pts/fac_n/x_four                                          
+finish                                                                          
+cmo/DELATT/mo_pts/dfield                                                        
+compute/distance_field/mo_pts/mo_line_work/dfield                               
+math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A2/                       
+math/add/mo_pts/x_four/1,0,0/mo_pts/x_four/PARAM_B2/                            
+cmo/copyatt/mo_pts/mo_pts/fac_n/x_four                                          
+finish                                                                          
+cmo/DELATT/mo_pts/dfield                                                        
+compute/distance_field/mo_pts/mo_line_work/dfield                               
+math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A2/                       
+math/add/mo_pts/x_four/1,0,0/mo_pts/x_four/PARAM_B2/                            
+cmo/copyatt/mo_pts/mo_pts/fac_n/x_four                                          
+finish                                                                          
+cmo/DELATT/mo_pts/dfield                                                        
+compute/distance_field/mo_pts/mo_line_work/dfield                               
+math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A2/                       
+math/add/mo_pts/x_four/1,0,0/mo_pts/x_four/PARAM_B2/                            
+cmo/copyatt/mo_pts/mo_pts/fac_n/x_four                                          
+finish                                                                          
+cmo/DELATT/mo_pts/dfield                                                        
+compute/distance_field/mo_pts/mo_line_work/dfield                               
+math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A2/                       
+math/add/mo_pts/x_four/1,0,0/mo_pts/x_four/PARAM_B2/                            
+cmo/copyatt/mo_pts/mo_pts/fac_n/x_four                                          
+finish                                                                          
+cmo/DELATT/mo_pts/dfield                                                        
+compute/distance_field/mo_pts/mo_line_work/dfield                               
+math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A2/                       
+math/add/mo_pts/x_four/1,0,0/mo_pts/x_four/PARAM_B2/                            
+cmo/copyatt/mo_pts/mo_pts/fac_n/x_four                                          
+finish                                                                          
+cmo/DELATT/mo_pts/dfield                                                        
+compute/distance_field/mo_pts/mo_line_work/dfield                               
+math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A2/                       
+math/add/mo_pts/x_four/1,0,0/mo_pts/x_four/PARAM_B2/                            
+cmo/copyatt/mo_pts/mo_pts/fac_n/x_four                                          
+finish                                                                          
+cmo/DELATT/mo_pts/dfield                                                        
+compute/distance_field/mo_pts/mo_line_work/dfield                               
+math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A2/                       
+math/add/mo_pts/x_four/1,0,0/mo_pts/x_four/PARAM_B2/                            
+cmo/copyatt/mo_pts/mo_pts/fac_n/x_four                                          
+finish                                                                          
+assign///maxiter_sm/1                                                           
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+cmo select mo1                                                                  
+smooth                                                                          
+cmo select mo1                                                                  
+recon/0/                                                                        
+assign///maxiter_sm/10                                                          
+cmo select mo1                                                                  
+massage2/user_function.lgi/1.4000000000000001/fac_n/1e-05/1e-05/1,0,0/strictmerg
+cmo/DELATT/mo_pts/dfield                                                        
+compute/distance_field/mo_pts/mo_line_work/dfield                               
+math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A/                        
+math/add/mo_pts/x_four/1,0,0/mo_pts/x_four/PARAM_B/                             
+cmo/copyatt/mo_pts/mo_pts/fac_n/x_four                                          
+finish                                                                          
+cmo/DELATT/mo_pts/dfield                                                        
+compute/distance_field/mo_pts/mo_line_work/dfield                               
+math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A/                        
+math/add/mo_pts/x_four/1,0,0/mo_pts/x_four/PARAM_B/                             
+cmo/copyatt/mo_pts/mo_pts/fac_n/x_four                                          
+finish                                                                          
+cmo/DELATT/mo_pts/dfield                                                        
+compute/distance_field/mo_pts/mo_line_work/dfield                               
+math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A/                        
+math/add/mo_pts/x_four/1,0,0/mo_pts/x_four/PARAM_B/                             
+cmo/copyatt/mo_pts/mo_pts/fac_n/x_four                                          
+finish                                                                          
+cmo/DELATT/mo_pts/dfield                                                        
+compute/distance_field/mo_pts/mo_line_work/dfield                               
+math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A/                        
+math/add/mo_pts/x_four/1,0,0/mo_pts/x_four/PARAM_B/                             
+cmo/copyatt/mo_pts/mo_pts/fac_n/x_four                                          
+finish                                                                          
+cmo/DELATT/mo_pts/dfield                                                        
+compute/distance_field/mo_pts/mo_line_work/dfield                               
+math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A/                        
+math/add/mo_pts/x_four/1,0,0/mo_pts/x_four/PARAM_B/                             
+cmo/copyatt/mo_pts/mo_pts/fac_n/x_four                                          
+finish                                                                          
+cmo/DELATT/mo_pts/dfield                                                        
+compute/distance_field/mo_pts/mo_line_work/dfield                               
+math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A/                        
+math/add/mo_pts/x_four/1,0,0/mo_pts/x_four/PARAM_B/                             
+cmo/copyatt/mo_pts/mo_pts/fac_n/x_four                                          
+finish                                                                          
+cmo/DELATT/mo_pts/dfield                                                        
+compute/distance_field/mo_pts/mo_line_work/dfield                               
+math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A/                        
+math/add/mo_pts/x_four/1,0,0/mo_pts/x_four/PARAM_B/                             
+cmo/copyatt/mo_pts/mo_pts/fac_n/x_four                                          
+finish                                                                          
+cmo/DELATT/mo_pts/dfield                                                        
+compute/distance_field/mo_pts/mo_line_work/dfield                               
+math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A/                        
+math/add/mo_pts/x_four/1,0,0/mo_pts/x_four/PARAM_B/                             
+cmo/copyatt/mo_pts/mo_pts/fac_n/x_four                                          
+finish                                                                          
+cmo/DELATT/mo_pts/dfield                                                        
+compute/distance_field/mo_pts/mo_line_work/dfield                               
+math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A/                        
+math/add/mo_pts/x_four/1,0,0/mo_pts/x_four/PARAM_B/                             
+cmo/copyatt/mo_pts/mo_pts/fac_n/x_four                                          
+finish                                                                          
+cmo/DELATT/mo_pts/dfield                                                        
+compute/distance_field/mo_pts/mo_line_work/dfield                               
+math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A/                        
+math/add/mo_pts/x_four/1,0,0/mo_pts/x_four/PARAM_B/                             
+cmo/copyatt/mo_pts/mo_pts/fac_n/x_four                                          
+finish                                                                          
+cmo/DELATT/mo_pts/dfield                                                        
+compute/distance_field/mo_pts/mo_line_work/dfield                               
+math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A/                        
+math/add/mo_pts/x_four/1,0,0/mo_pts/x_four/PARAM_B/                             
+cmo/copyatt/mo_pts/mo_pts/fac_n/x_four                                          
+finish                                                                          
+cmo/DELATT/mo_pts/dfield                                                        
+compute/distance_field/mo_pts/mo_line_work/dfield                               
+math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A/                        
+math/add/mo_pts/x_four/1,0,0/mo_pts/x_four/PARAM_B/                             
+cmo/copyatt/mo_pts/mo_pts/fac_n/x_four                                          
+finish                                                                          
+cmo/DELATT/mo_pts/dfield                                                        
+compute/distance_field/mo_pts/mo_line_work/dfield                               
+math/multiply/mo_pts/x_four/1,0,0/mo_pts/dfield/PARAM_A/                        
+math/add/mo_pts/x_four/1,0,0/mo_pts/x_four/PARAM_B/                             
+cmo/copyatt/mo_pts/mo_pts/fac_n/x_four                                          
+finish                                                                          
+cmo select mo1                                                                  
+cmo/DELATT/mo1/rf_field_name                                                    
+cmo select mo_line_work                                                         
+cmo/delete/mo_line_work                                                         
+cmo select mo_poly_work                                                         
+cmo/delete/mo_poly_work                                                         
+cmo/create/surfacemesh                                                          
+cmo/select/surfacemesh                                                          
+read/sheetij/_temp_elev_array.dat/475,825/0.0,0.0/4.0,4.0/skip 0/yflip/connect/a
+cmo select surfacemesh                                                          
+trans/1,0,0/0,0,0/593000.0,114500.0,0.0                                         
+cmo select surfacemesh                                                          
+pset/pduds/attribute/zic/1,0,0/-9998.0/le                                       
+cmo select surfacemesh                                                          
+eltset/eduds/inclusive/pset/get/pduds                                           
+cmo select surfacemesh                                                          
+rmpoint/element/eltset,get,eduds                                                
+cmo select surfacemesh                                                          
+rmpoint/compress                                                                
+cmo select surfacemesh                                                          
+resetpts/itp                                                                    
+cmo select surfacemesh                                                          
+cmo/addatt/surfacemesh/z_elev/VDOUBLE/scalar/nnodes/linear/permanent//0.0       
+cmo select surfacemesh                                                          
